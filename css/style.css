@@ -171,6 +171,7 @@ div p {
     max-height: 350px;
     box-sizing: border-box;
     overflow-x: auto;
+    list-style: none;
 }
 .item-adicionado{
     display: flex;
