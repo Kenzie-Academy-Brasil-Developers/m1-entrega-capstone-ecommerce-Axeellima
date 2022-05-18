@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,100 +8,28 @@
     <title>Weartake-Capstone</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
 </head>
+
 <body>
     <main>
         <header class="cabecalho">
             <h1 class="title">Weartake</h1>
             <nav class="navegacao">
                 <ul>
-                    <li>Todos</li>
-                    <li>Acessórios</li>
-                    <li>Calçados</li>
-                    <li>Camisetas</li>
+                    <li class="todos">Todos</li>
+                    <li class="acessorios">Acessórios</li>
+                    <li class="calcados">Calçados</li>
+                    <li class="camisetas">Camisetas</li>
                 </ul>
             </nav>
         </header>
-        <section class="content">
-            <div class="pai">
-                <div class="space-img">
-                    <img src="./img/camiseta_preta.svg" alt="ligthweigth jacket">
-                </div>
-                <div class="descricao">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="nome-item">Short-Sleeve T-Shirt</h2>
-                    <p>Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um tecido mais fino...</p>
-                    <p class="price">R$ 100,00</p>
-                    <button class="add-cart">Adicione ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="pai">
-                <div class="space-img">
-                    <img src="./img/gorro.svg" alt="black hat">
-                </div>
-                <div class="descricao">
-                    <p class="categoria">Acessórios</p>
-                    <h2 class="nome-item">Black Hat</h2>
-                    <p>O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
-                    <p class="price">R$ 100,00</p>
-                    <button class="add-cart">Adicione ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="pai">
-                <div class="space-img">
-                    <img src="./img/mascara.svg" alt="Mask">
-                </div>
-                <div class="descricao">
-                    <p class="categoria">Acessórios</p>
-                    <h2 class="nome-item">Mask</h2>
-                    <p>Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas..</p>
-                    <p class="price">R$ 100,00</p>
-                    <button class="add-cart">Adicione ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="pai">
-                <div class="space-img">
-                    <img src="./img/camiseta_branca.svg" alt="T-Shirt">
-                </div>
-                <div class="descricao">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="nome-item">T-Shirt</h2>
-                    <p>Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
-                    <p class="price">R$ 100,00</p>
-                    <button class="add-cart">Adicione ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="pai">
-                <div class="space-img">
-                    <img src="./img/moletom.svg" alt="Short-Sleeve T-Shirt">
-                </div>
-                <div class="descricao">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="nome-item">Ligthweigth Jacket</h2>
-                    <p>Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
-                    <p class="price">R$ 100,00</p>
-                    <button class="add-cart">Adicione ao carrinho</button>
-                </div>
-            </div>
-
-            <div class="pai">
-                <div class="space-img">
-                    <img src="./img/jaqueta.svg" alt="Champion Packable Jacket">
-                </div>
-                <div class="descricao">
-                    <p class="categoria">Camisetas</p>
-                    <h2 class="nome-item">Champion Packable Jacket</h2>
-                    <p>Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
-                    <p class="price">R$ 100,00</p>
-                    <button class="add-cart">Adicione ao carrinho</button>
-                </div>
-            </div>
+        <section>
+            <ul class="content">
+            </ul>
         </section>
-        <div class="barr-and-kart">
+        <section class="barr-and-kart">
 
             <div class="barr">
                 <input type="text" name="busca" id="busca" placeholder="Digite aqui sua pesquisa">
@@ -108,14 +37,23 @@
             </div>
 
             <div class="kart">
+
                 <h2>Carrinho de Compras</h2>
-                <div class="space-kart">
-                    <h3>Carrinho vazio</h3>
-                    <p>Adicione itens</p>
+                <ul class="space-kart">
+                
+            </ul>
+
+                <div class="valores">
+                    <div class="quantidade">
+                    <p>Quantidade:</p>
+                    </div>
+                    <div class="total">
+                        <p>Total:</p>
+                    </div>
                 </div>
             </div>
-
-        </div>
+        </section>
     </main>
 </body>
+
 </html>
